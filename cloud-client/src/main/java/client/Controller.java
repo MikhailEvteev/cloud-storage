@@ -1,4 +1,4 @@
-package com.geekbrains.cloud.storage.client;
+package client;
 
 public class Controller {
 }

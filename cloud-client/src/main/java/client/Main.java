@@ -1,4 +1,4 @@
-package com.geekbrains.cloud.storage.client;
+package client;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +10,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/main.fxml"));
-        primaryStage.setTitle("GeekBrains Cloud Storage Client");
+        primaryStage.setTitle("Java Client");
         primaryStage.setScene(new Scene(root, 800, 600));
         primaryStage.show();
     }

@@ -11,6 +11,7 @@
     <modules>
         <module>cloud-service</module>
         <module>cloud-client</module>
+        <module>cloud-common</module>
     </modules>
 
     <properties>
