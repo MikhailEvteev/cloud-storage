@@ -1,0 +1,55 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ListView?>
+<VBox fx:controller="client.ControllerCL" xmlns:fx="http://javafx.com/fxml" alignment="center" >
+    <MenuBar>
+        <Menu text="Cloud">
+            <MenuItem text="Exit">
+            </MenuItem>
+        </Menu>
+    </MenuBar>
+
+    <HBox>
+        <Button text="Отправить файл" HBox.hgrow="ALWAYS" maxWidth="Infinity" />
+        <Button text="Удалить файл" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Button text="Обновить" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Button text="Скачать файл" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Button text="Удалить файл" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Button text="Обновить" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+    </HBox>
+
+    <HBox>
+        <ComboBox/>
+        <TextField HBox.hgrow="ALWAYS" editable="false"/>
+        <Button text="Назад"/>
+    </HBox>
+
+    <ListView VBox.vgrow="ALWAYS"/>
+
+    <HBox spacing="5">
+        <Button text="Отправить файл" HBox.hgrow="ALWAYS" maxWidth="Infinity" />
+        <Button text="Удалить файл" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Button text="Обновить" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Button text="Скачать файл" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Button text="Удалить файл" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Button text="Обновить" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+        </padding>
+    </HBox>
+
+</VBox>
