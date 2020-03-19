@@ -14,7 +14,9 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ListView?>
-<VBox fx:controller="client.ControllerCL" xmlns:fx="http://javafx.com/fxml" alignment="center" >
+<VBox fx:controller="client.ControllerCL"
+      xmlns:fx="http://javafx.com/fxml" alignment="center"
+      stylesheets="styles.css">
 
     <MenuBar>
         <Menu text="Cloud">
@@ -34,7 +36,7 @@
         <Button text="Назад"/>
     </HBox>
 
-    <ListView VBox.vgrow="ALWAYS"/>
+    <ListView VBox.vgrow="ALWAYS" fx:id="filesList"/>
 
     <HBox spacing="5">
         <Button text="Отправить файл" HBox.hgrow="ALWAYS" maxWidth="Infinity" />
