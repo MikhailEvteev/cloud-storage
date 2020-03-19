@@ -34,7 +34,7 @@
         <Button text="Назад"/>
     </HBox>
 
-    <ListView VBox.vgrow="ALWAYS" fx:id="filesList"/>
+    <ListView VBox.vgrow="ALWAYS"/>
 
     <HBox spacing="5">
         <Button text="Отправить файл" HBox.hgrow="ALWAYS" maxWidth="Infinity" />

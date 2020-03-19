@@ -7,9 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-client" />
+        <module name="cloud-server" />
         <module name="cloud-common" />
         <module name="cloud-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-overall" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

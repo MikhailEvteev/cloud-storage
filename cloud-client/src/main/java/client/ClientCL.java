@@ -9,8 +9,8 @@ import javafx.stage.Stage;
 public class ClientCL extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/client.fxml"));
-        primaryStage.setTitle("Java Client");
+        Parent root = FXMLLoader.load(getClass().getResource("/manager.fxml"));
+        primaryStage.setTitle("Java Client and Server");
         primaryStage.setScene(new Scene(root, 800, 600));
         primaryStage.show();
     }
