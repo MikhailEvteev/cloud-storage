@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
+import io.netty.channel.ChannelOutboundHandlerAdapter;
 
-public class ServerHandler {
+public class ServerHandler extends ChannelOutboundHandlerAdapter {
+
 }
