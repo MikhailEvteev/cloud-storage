@@ -1,3 +1,6 @@
+package server;
+
+import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.channel.ChannelOutboundHandlerAdapter;
@@ -12,14 +15,17 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        
-        super.channelRead(ctx, msg);
+
+        ByteBuf buf = (ByteBuf)msg;
+        while (buf.readableBytes() > 0) {
+            System.out.println((char) buf.readByte());
+        }
     }
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         cause.printStackTrace();
         ctx.close();
-        super.exceptionCaught(ctx, cause);
+
     }
 }
