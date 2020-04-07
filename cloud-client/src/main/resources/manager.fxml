@@ -1,43 +1,39 @@
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+
 
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TableView?>
+
 <?import javafx.scene.layout.HBox?>
+
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.ListView?>
-<VBox fx:controller="client.ControllerCL"
-      xmlns:fx="http://javafx.com/fxml" alignment="center"
-      stylesheets="styles.css">
+<VBox fx:controller="client.ControllerManager" xmlns:fx="http://javafx.com/fxml"
+      alignment="center" stylesheets="styles.css">
 
     <MenuBar>
-        <Menu text="Cloud">
+        <Menu text="File">
             <MenuItem text="Exit" onAction="#menuItemFileExitAction">
             </MenuItem>
         </Menu>
     </MenuBar>
 
-    <HBox>
-        <Button text="Client" HBox.hgrow="ALWAYS" maxWidth="Infinity"  />
-        <Button text="Server" HBox.hgrow="ALWAYS" maxWidth="Infinity"  />
-    </HBox>
+    <TextField HBox.hgrow="ALWAYS" editable="false" />
+    <ListView fx:id="filesList" VBox.vgrow="ALWAYS" />
 
     <HBox>
-        <ComboBox/>
-        <TextField HBox.hgrow="ALWAYS" editable="false"/>
-        <Button text="Вверх"/>
+        <fx:include fx:id="leftPannel" source="manager.fxml" HBox.hgrow="ALWAYS" />
+        <fx:include fx:id="rightPannel" source="manager.fxml" HBox.hgrow="ALWAYS" />
     </HBox>
-
-    <ListView VBox.vgrow="ALWAYS" fx:id="filesList"/>
-
+    
     <HBox spacing="5">
         <Button text="Отправить файл" HBox.hgrow="ALWAYS" maxWidth="Infinity" />
         <Button text="Удалить файл" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>

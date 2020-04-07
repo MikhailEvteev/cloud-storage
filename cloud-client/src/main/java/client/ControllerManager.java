@@ -10,20 +10,17 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class ControllerCL implements Initializable {
+public class ControllerManager implements Initializable {
 
     @FXML
     ListView<String> filesList;
-
-    public void initialize(URL location, ResourceBundle resources) {
-        filesList.getItems().addAll("Java", "Core", "EX", "Qwerty");
-    }
-
-
 
     public void menuItemFileExitAction(ActionEvent actionEvent) {
         Platform.exit();
     }
 
+    public void initialize(URL location, ResourceBundle resources) {
+        filesList.getItems().addAll("Java", "Core", "MMMM", "adcf");
 
+    }
 }
